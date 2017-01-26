@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+	  http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="employee"  class="com.anjali.training.bean.Employee">
+		<property name="address" ref="address"></property>
+		<property name="empName" value="Vimal"></property>
+	</bean>
+
+	
+	<bean id="address" class="com.anjali.training.bean.Address">
+		<property name="city" value="Pune"></property>
+	</bean>
+	
+	
+	
+</beans>
